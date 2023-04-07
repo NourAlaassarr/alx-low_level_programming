@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * _sqrt_value - search for the square for n beginning
+ * _sqrt_value - search for the square value of n beginning
  * @n: number
- * @value:value
- * Return: natural square value for n
+ * @value:value (num)
+ * Return: natural square 
  */
 
-int _sqrt_value(int num, int value)
+int _sqrt_value(int n, int value)
 {
-if (value * value > num)
+if (value * value > n)
 return (-1);
 
-if (value * value == num)
+if (value * value == n)
 return (value);
 
-return (_sqrt_value(num, value + 1));
+return (_sqrt_value(n, value + 1));
 }
 
 /**
