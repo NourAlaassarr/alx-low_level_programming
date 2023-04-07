@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * _sqrt_value - search for the square value of n beginning
  * @n: number
  * @value:value
- * Return: natural square 
+ * Return: natural square value
  */
+
 int _sqrt_value(int n, int value)
 {
 if (value * value > n)
