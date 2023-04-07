@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * is_prime - checks if a number is prime
- * @n: number 
- * @i: div 
- *
- * Return: 1 if n is prime, 0 otherwise
+ *is_prime - checks if a number is prime
+ *@n: number 
+ *@i: div 
+ *Return: 1 if n is prime, 0 otherwise
  */
 int is_prime(int n, int i)
 {
