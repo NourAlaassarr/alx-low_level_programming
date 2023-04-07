@@ -3,7 +3,7 @@
 /**
  * _sqrt_value - search for the square value of n beginning
  * @n: number
- * @value:value (num)
+ * @value:value
  * Return: natural square 
  */
 
