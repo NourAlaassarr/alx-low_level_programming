@@ -1,10 +1,10 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _memset - fill the memory with constant byte
- * @s: memory 
- * @b: char 
+ * @s: memory to be filled
+ * @b: char to copy
  * @n: number of times to copy char b
  *
  * Return: pointer to the memory area s
@@ -23,20 +23,20 @@ char *_memset(char *s, char b, unsigned int n)
 
 /**
  * _calloc - allocates memory for array
- * @nm: number
- * @size: size 
+ * @nmemb: number of elements in array
+ * @size: size of each element
  *
  * Return: pointer to allocated memory
  */
-void *_calloc(unsigned int nm, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *p;
+	char *ptr;
 
-	if (nm == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	p = malloc(size * nm);
-	if (p == NULL)
+	ptr = malloc(size * nmemb);
+	if (ptr == NULL)
 		return (NULL);
-	_memset(p, 0, nm * size);
-	return (p);
+	_memset(ptr, 0, nmemb * size);
+	return (ptr);
 }
