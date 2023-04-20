@@ -1,71 +1,64 @@
-
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * op_add - add two numbers
- * @a: first number
- * @b: second number
- *
- * Return: the sum of 2 numbers
+ * op_add - adds two numbers
+ * @a: number one
+ * @b: number two
+ * Return: the sum of a and b
  */
-
 int op_add(int a, int b)
 {
 	return (a + b);
 }
-
 /**
- * op_sub - subtract two numbers
- * @a: the first number
- * @b: the second number
- *
- * Return: the differrence of 2 numbers
+ * op_sub - substract two numbers
+ * @a: number 1
+ * @b: number 2
+ * Return: the difference between of a and b
  */
-
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
-
 /**
  * op_mul - multiply two numbers
- * @a: first number
- * @b: second number
- *
- * Return: the multiplication of two numbers
+ * @a: number 1
+ * @b: number 2
+ * Return: the product of a and b
  */
-
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
-
 /**
- * op_div - divides two numbers
- * @a: first number
- * @b: second number
- *
- * Return: the division of two numbers
+ * op_div - divide two numbers
+ * @a: number 1
+ * @b: number 2
+ * Return: the result of the division of a by b
  */
-
 int op_div(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 	return (a / b);
 }
-
 /**
- * op_mod - modulus of number
- * @a: first number
- * @b: second number
- *
- * Return: return the modulus of number
+ * op_mod - modulation of two numbers
+ * @a: number 1
+ * @b: number 2
+ * Return: the remainder of the division of a by b
  */
-
 int op_mod(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 	return (a % b);
 }
