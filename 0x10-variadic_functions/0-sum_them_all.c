@@ -5,7 +5,7 @@
  * sum_them_all - Add alll numbers of parameters
  * @n: number of parameters passed
  * @...: number which will be added
- *by nour
+ *
  * Return: Sum of all parameters
  */
 int sum_them_all(const unsigned int n, ...)
