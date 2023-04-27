@@ -4,7 +4,7 @@
 
 /**
  * main - result
- * @argc:
+ * @argc: integer t
  * @argv:list
  * Return: 0
  */
