@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <stdarg.h>
-#include <stddef.h>
 #include <unistd.h>
-#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
 /**
  * print_list - prints elements in list
@@ -10,13 +8,11 @@
  *
  * Return: elements
  */
-
 size_t print_list(const list_t *h)
 {
 size_t count = 0;
-int num = 0;
-
-for (num = 0 ; h != NULL ; num++)
+int c = 0;
+for (c = 0 ; h != NULL ; c++)
 {
 if (h->str != NULL)
 printf("[%u] %s\n", h->len, h->str);
