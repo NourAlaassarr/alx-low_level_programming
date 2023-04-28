@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * flash - function to print 
+ * Return: void
+ */
 
 void __attribute__((constructor)) flash();
 
