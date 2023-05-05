@@ -8,17 +8,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-  unsigned long int diff = n ^ m;  
+  unsigned long int d = n ^ m;  
   
   unsigned int count = 0;
-  while (diff > 0)
+  while (d > 0)
   {
-    if ((diff & 1) == 1)  
-        
+    if ((d & 1) == 1)  
+
     {
       count++;
     }
-    diff >>= 1;  
+    d >>= 1; 
     
   }
   return count;
