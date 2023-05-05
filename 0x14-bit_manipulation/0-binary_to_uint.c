@@ -14,11 +14,9 @@ if (!b)
 return (0);
 	for (i = 0; b[i] ; i++)
 {
-		if (b[i] < '0' || b[i] > '1')
-			return (0);
-    sum = (sum << 1) | (b[i] - '0');
-
-	}
-
-	return (sum);
+	if (b[i] < '0' || b[i] > '1')
+		return (0);
+	sum = (sum << 1) | (b[i] - '0');
+}
+return (sum);
 }
