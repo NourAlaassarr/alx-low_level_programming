@@ -18,6 +18,8 @@ ptr = open(filename, O_WRONLY | O_APPEND);
 
 if (ptr < 0)
 	return (-1);
+if (text_content == NULL)
+	text_content = "";
 if (text_content)
 {
 	while (text_content[size])
